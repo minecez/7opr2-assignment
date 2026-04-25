@@ -42,6 +42,6 @@ public class GradingTest {
 
         schoolSystem.gradeStudent(student, course, 1, lecturer);
 
-        Assertions.assertThrows(IllegalArgumentException.class, () -> schoolSystem.gradeStudent(student, course, 5, lecturer));
+        Assertions.assertThrows(IllegalStateException.class, () -> schoolSystem.gradeStudent(student, course, 5, lecturer));
     }
 }
